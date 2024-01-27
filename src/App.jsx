@@ -4,7 +4,7 @@ import useFetchComment from "./hooks/useFetchComment";
 
 const App = () => {
   const { comments } = useFetchComment();
-  console.log(comments);
+
   return (
     <Layout>
       <h1 className="font-bold text-center text-xl">
