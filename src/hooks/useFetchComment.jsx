@@ -10,6 +10,7 @@ const useFetchComment = () => {
         const res = await fetch("https://salin-abangku.vercel.app/api/all");
         const commentsData = await res.json();
         setComments(commentsData);
+        console.log(commentsData);
       } catch (error) {
         console.log(error);
       }
