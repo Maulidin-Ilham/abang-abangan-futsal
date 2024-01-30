@@ -1,8 +1,10 @@
 import CommentList from "./components/CommentList";
 import Layout from "./components/Layout";
-import { comments } from "./libs/data";
+import useFetchComment from "./hooks/useFetchComment";
 
 const App = () => {
+  const { comments } = useFetchComment();
+
   return (
     <Layout>
       <h1 className="font-bold text-center text-xl">
